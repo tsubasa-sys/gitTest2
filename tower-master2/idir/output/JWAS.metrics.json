@@ -1,0 +1,545 @@
+{
+  "basic-metrics" : {
+    "web-app-entry-points" : 8,
+    "string-graph-nodes" : 20853,
+    "string-graph-edges" : 37079,
+    "string-graph-tainted-node-percent" : "19.23",
+    "string-graph-sink-reachable-node-percent" : "47.07",
+    "string-graph-tainted-fn-percent" : "36.57",
+    "string-graph-sink-reachable-fn-percent" : "47.93",
+    "entry nodes" : 8,
+    "head symbols" : 8,
+    "unique parse states" : 1,
+    "total rules" : 8,
+    "non-terminal nodes" : 8,
+    "total symbols" : 8,
+    "rules with one symbol" : 8,
+    "total components" : 104,
+    "total keys in components" : 190,
+    "average keys in a component" : "1.83",
+    "max key in a component" : 15,
+    "components that are over the key limit" : 4,
+    "max key in a component" : 15
+  },
+  "memory-metrics" : {
+    "predicted-string-graph-memory" : 13178819,
+    "analyze_dataflow1_post_DATAFLOW_ANALYSIS1_phase" : {
+      "resident_memory" : 274563072,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "analyze_dataflow1_pre_DATAFLOW_ANALYSIS1_phase" : {
+      "resident_memory" : 274391040,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "analyze_dataflow2_post_DATAFLOW_ANALYSIS2_phase" : {
+      "resident_memory" : 282980352,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "analyze_dataflow2_pre_DATAFLOW_ANALYSIS2_phase" : {
+      "resident_memory" : 284106752,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "xss_XSS_after_creating_rules" : {
+      "resident_memory" : 283271168,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "xss_XSS_after_finding_states" : {
+      "resident_memory" : 283303936,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "xss_XSS_before_creating_rules" : {
+      "resident_memory" : 283238400,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "xss_XSS_before_finding_states" : {
+      "resident_memory" : 283283456,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "xss_after_XSS_checker_cleanup" : {
+      "resident_memory" : 283344896,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "xss_after_XSS_checker_run" : {
+      "resident_memory" : 283332608,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "xss_after_creating_XSS_defects" : {
+      "resident_memory" : 283332608,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    },
+    "xss_before_XSS_checker_run" : {
+      "resident_memory" : 283197440,
+      "peak_resident_memory" : 0,
+      "virtual_memory" : 0,
+      "peak_virtual_memory" : 352567296
+    }
+  },
+  "state-derivation-search-metrics" : {},
+  "candidate-graph-search-metrics" : {
+    "SENSITIVE_DATA_LEAK_INTERNAL_stats" : {
+      "node_limit" : 100000,
+      "confidence_penalty_limit" : 99999,
+      "edge_limit" : 0,
+      "fields_limit" : 1,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 14,
+          "total_nodes" : 1066,
+          "max_nodes" : 148,
+          "max_edges" : 26,
+          "max_fields" : 1,
+          "max_fields" : 1,
+          "avg_nodes" : "76.14",
+          "avg_edges" : "22.57",
+          "avg_fields" : "1.00",
+          "total_ctrl_flow_visits" : 134,
+          "max_ctrl_flow_visits" : 13,
+          "avg_ctrl_flow_visits" : "9.57",
+          "total_unique_field_reads" : 0,
+          "max_unique_field_reads" : 0,
+          "avg_unique_field_reads" : "0.00",
+          "total_wormholes" : 0,
+          "max_wormholes" : 0,
+          "avg_wormholes" : "0.00",
+          "paths_with_fields" : 14,
+          "paths_with_wormholes" : 0,
+          "hit_node_limit" : 0,
+          "hit_penalty_limit" : 14,
+          "hit_edge_limit" : 0,
+          "hit_fields_limit" : 10,
+          "visited_node_stats" : {
+            "num_nodes" : 1968,
+            "num_data_flow" : 804,
+            "num_ctrl_flow" : 134,
+            "num_dflow_field_read" : 46
+          }
+        },
+        "fail_guard" : {
+          "node_limit" : 10,
+          "total_nodes" : 416,
+          "max_nodes" : 64,
+          "max_edges" : 15,
+          "max_fields" : 1,
+          "max_fields" : 1,
+          "avg_nodes" : "41.60",
+          "avg_edges" : "14.20",
+          "avg_fields" : "1.00",
+          "total_ctrl_flow_visits" : 76,
+          "max_ctrl_flow_visits" : 10,
+          "avg_ctrl_flow_visits" : "7.60",
+          "total_unique_field_reads" : 0,
+          "max_unique_field_reads" : 0,
+          "avg_unique_field_reads" : "0.00",
+          "total_wormholes" : 0,
+          "max_wormholes" : 0,
+          "avg_wormholes" : "0.00",
+          "paths_with_fields" : 10,
+          "paths_with_wormholes" : 0,
+          "hit_node_limit" : 0,
+          "hit_penalty_limit" : 10,
+          "hit_edge_limit" : 0,
+          "hit_fields_limit" : 10,
+          "visited_node_stats" : {
+            "num_nodes" : 832,
+            "num_data_flow" : 328,
+            "num_ctrl_flow" : 76,
+            "num_dflow_field_read" : 14
+          }
+        },
+        "success_stats" : {
+          "node_limit" : 4,
+          "total_nodes" : 1654,
+          "max_nodes" : 575,
+          "max_edges" : 26,
+          "max_fields" : 1,
+          "max_fields" : 1,
+          "avg_nodes" : "413.50",
+          "avg_edges" : "22.50",
+          "avg_fields" : "1.00",
+          "total_ctrl_flow_visits" : 1092,
+          "max_ctrl_flow_visits" : 345,
+          "avg_ctrl_flow_visits" : "273.00",
+          "total_unique_field_reads" : 0,
+          "max_unique_field_reads" : 0,
+          "avg_unique_field_reads" : "0.00",
+          "total_wormholes" : 0,
+          "max_wormholes" : 0,
+          "avg_wormholes" : "0.00",
+          "paths_with_fields" : 4,
+          "paths_with_wormholes" : 0,
+          "hit_node_limit" : 0,
+          "hit_penalty_limit" : 4,
+          "hit_edge_limit" : 0,
+          "hit_fields_limit" : 0,
+          "visited_node_stats" : {
+            "num_nodes" : 3284,
+            "num_data_flow" : 518,
+            "num_ctrl_flow" : 1092,
+            "num_dflow_field_read" : 32
+          }
+        },
+        "fail_stats" : {
+          "node_limit" : 10,
+          "total_nodes" : 47340,
+          "max_nodes" : 4734,
+          "max_edges" : 92,
+          "max_fields" : 1,
+          "max_fields" : 1,
+          "avg_nodes" : "4734.00",
+          "avg_edges" : "92.00",
+          "avg_fields" : "1.00",
+          "total_ctrl_flow_visits" : 46870,
+          "max_ctrl_flow_visits" : 4687,
+          "avg_ctrl_flow_visits" : "4687.00",
+          "total_unique_field_reads" : 0,
+          "max_unique_field_reads" : 0,
+          "avg_unique_field_reads" : "0.00",
+          "total_wormholes" : 0,
+          "max_wormholes" : 0,
+          "avg_wormholes" : "0.00",
+          "paths_with_fields" : 10,
+          "paths_with_wormholes" : 0,
+          "hit_node_limit" : 0,
+          "hit_penalty_limit" : 10,
+          "hit_edge_limit" : 0,
+          "hit_fields_limit" : 10,
+          "visited_node_stats" : {
+            "num_nodes" : 96020,
+            "num_data_flow" : 1080,
+            "num_ctrl_flow" : 46870,
+            "num_dflow_field_read" : 60
+          }
+        }
+      }
+    },
+    "URL_MANIPULATION_stats" : {
+      "node_limit" : 0,
+      "confidence_penalty_limit" : 0,
+      "edge_limit" : 0,
+      "fields_limit" : 0,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 0
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 0
+        },
+        "fail_stats" : {
+          "node_limit" : 0
+        }
+      }
+    },
+    "XML_EXTERNAL_ENTITY_INTERNAL_stats" : {
+      "node_limit" : 0,
+      "confidence_penalty_limit" : 0,
+      "edge_limit" : 0,
+      "fields_limit" : 0,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 0
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 0
+        },
+        "fail_stats" : {
+          "node_limit" : 0
+        }
+      }
+    },
+    "__MOBILE_ID_MISUSE_STRING_GRAPH_INTERNAL_stats" : {
+      "node_limit" : 0,
+      "confidence_penalty_limit" : 0,
+      "edge_limit" : 0,
+      "fields_limit" : 0,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 0
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 0
+        },
+        "fail_stats" : {
+          "node_limit" : 0
+        }
+      }
+    },
+    "__OS_CMD_INJECTION_STRING_GRAPH_INTERNAL_stats" : {
+      "node_limit" : 0,
+      "confidence_penalty_limit" : 0,
+      "edge_limit" : 0,
+      "fields_limit" : 0,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 0
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 0
+        },
+        "fail_stats" : {
+          "node_limit" : 0
+        }
+      }
+    },
+    "__PATH_MANIPULATION_STRING_GRAPH_INTERNAL_stats" : {
+      "node_limit" : 1000000,
+      "confidence_penalty_limit" : 99999,
+      "edge_limit" : 0,
+      "fields_limit" : 1,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 8,
+          "total_nodes" : 262,
+          "max_nodes" : 43,
+          "max_edges" : 25,
+          "max_fields" : 1,
+          "max_fields" : 1,
+          "avg_nodes" : "32.75",
+          "avg_edges" : "19.25",
+          "avg_fields" : "0.50",
+          "total_ctrl_flow_visits" : 16,
+          "max_ctrl_flow_visits" : 5,
+          "avg_ctrl_flow_visits" : "2.00",
+          "total_unique_field_reads" : 0,
+          "max_unique_field_reads" : 0,
+          "avg_unique_field_reads" : "0.00",
+          "total_wormholes" : 0,
+          "max_wormholes" : 0,
+          "avg_wormholes" : "0.00",
+          "paths_with_fields" : 4,
+          "paths_with_wormholes" : 0,
+          "hit_node_limit" : 0,
+          "hit_penalty_limit" : 4,
+          "hit_edge_limit" : 0,
+          "hit_fields_limit" : 4,
+          "visited_node_stats" : {
+            "num_nodes" : 504,
+            "num_data_flow" : 230,
+            "num_ctrl_flow" : 16,
+            "num_dflow_field_read" : 6
+          }
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 4,
+          "total_nodes" : 106,
+          "max_nodes" : 28,
+          "max_edges" : 16,
+          "max_fields" : 0,
+          "max_fields" : 0,
+          "avg_nodes" : "26.50",
+          "avg_edges" : "14.00",
+          "avg_fields" : "0.00",
+          "total_ctrl_flow_visits" : 0,
+          "max_ctrl_flow_visits" : 0,
+          "avg_ctrl_flow_visits" : "0.00",
+          "total_unique_field_reads" : 0,
+          "max_unique_field_reads" : 0,
+          "avg_unique_field_reads" : "0.00",
+          "total_wormholes" : 0,
+          "max_wormholes" : 0,
+          "avg_wormholes" : "0.00",
+          "paths_with_fields" : 0,
+          "paths_with_wormholes" : 0,
+          "hit_node_limit" : 0,
+          "hit_penalty_limit" : 0,
+          "hit_edge_limit" : 0,
+          "hit_fields_limit" : 0,
+          "visited_node_stats" : {
+            "num_nodes" : 384,
+            "num_data_flow" : 192,
+            "num_ctrl_flow" : 0,
+            "num_dflow_field_read" : 0
+          }
+        },
+        "fail_stats" : {
+          "node_limit" : 4,
+          "total_nodes" : 6194,
+          "max_nodes" : 1995,
+          "max_edges" : 70,
+          "max_fields" : 1,
+          "max_fields" : 1,
+          "avg_nodes" : "1548.50",
+          "avg_edges" : "70.00",
+          "avg_fields" : "1.00",
+          "total_ctrl_flow_visits" : 6114,
+          "max_ctrl_flow_visits" : 1971,
+          "avg_ctrl_flow_visits" : "1528.50",
+          "total_unique_field_reads" : 0,
+          "max_unique_field_reads" : 0,
+          "avg_unique_field_reads" : "0.00",
+          "total_wormholes" : 0,
+          "max_wormholes" : 0,
+          "avg_wormholes" : "0.00",
+          "paths_with_fields" : 4,
+          "paths_with_wormholes" : 0,
+          "hit_node_limit" : 0,
+          "hit_penalty_limit" : 4,
+          "hit_edge_limit" : 0,
+          "hit_fields_limit" : 4,
+          "visited_node_stats" : {
+            "num_nodes" : 12700,
+            "num_data_flow" : 224,
+            "num_ctrl_flow" : 6114,
+            "num_dflow_field_read" : 12
+          }
+        }
+      }
+    },
+    "__REGEX_INJECTION_STATICS_stats" : {
+      "node_limit" : 0,
+      "confidence_penalty_limit" : 0,
+      "edge_limit" : 0,
+      "fields_limit" : 0,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 0
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 0
+        },
+        "fail_stats" : {
+          "node_limit" : 0
+        }
+      }
+    },
+    "__SQLI_STRING_GRAPH_INTERNAL_stats" : {
+      "node_limit" : 0,
+      "confidence_penalty_limit" : 0,
+      "edge_limit" : 0,
+      "fields_limit" : 0,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 0
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 0
+        },
+        "fail_stats" : {
+          "node_limit" : 0
+        }
+      }
+    },
+    "__UNSAFE_DESERIALIZATION_STATICS_stats" : {
+      "node_limit" : 0,
+      "confidence_penalty_limit" : 0,
+      "edge_limit" : 0,
+      "fields_limit" : 0,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 0
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 0
+        },
+        "fail_stats" : {
+          "node_limit" : 0
+        }
+      }
+    },
+    "__UNSAFE_REFLECTION_STATICS_stats" : {
+      "node_limit" : 0,
+      "confidence_penalty_limit" : 0,
+      "edge_limit" : 0,
+      "fields_limit" : 0,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 0
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 0
+        },
+        "fail_stats" : {
+          "node_limit" : 0
+        }
+      }
+    },
+    "__WEAK_PASSWORD_HASH_STRING_GRAPH_INTERNAL_stats" : {
+      "node_limit" : 0,
+      "confidence_penalty_limit" : 0,
+      "edge_limit" : 0,
+      "fields_limit" : 0,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 0
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 0
+        },
+        "fail_stats" : {
+          "node_limit" : 0
+        }
+      }
+    },
+    "xss_stats" : {
+      "node_limit" : 0,
+      "confidence_penalty_limit" : 0,
+      "edge_limit" : 0,
+      "fields_limit" : 0,
+      "subset_stats" : {
+        "success_guard" : {
+          "node_limit" : 0
+        },
+        "fail_guard" : {
+          "node_limit" : 0
+        },
+        "success_stats" : {
+          "node_limit" : 0
+        },
+        "fail_stats" : {
+          "node_limit" : 0
+        }
+      }
+    }
+  }
+}
